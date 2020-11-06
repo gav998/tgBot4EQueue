@@ -29,7 +29,7 @@ def f1_1(message):
                 bot.send_message(admin_chat_id, f"Участник {t} приглашен.\n")
         else:
             queue.append(_id)
-            bot.send_message(_id, f"Ожидайте. Вас вызовут.\nПеред Вами {len(queue)-1} человек.\n")
+            bot.send_message(_id, f"Ожидайте. Вас вызовут.\nПеред Вами {len(queue)-1} человек.\nВаш id {_id}")
             bot.send_message(admin_chat_id, f"В очереди {len(queue)} человек.\n")
 
     except Exception as e:
